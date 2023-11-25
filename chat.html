@@ -6,10 +6,30 @@
   <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-<nav>
-  <img id="restartButton" src="img/replay.png" onclick="clearLocalStorage()" alt="restart game"/>
+<header>
   <h4>Refonte du Site 2023 sur la Sensibilisation aux MST pour la Nuit de l'Info</h4>
-</nav>
+  <input type="checkbox" class="nav-toggle" id="nav-toggle"/>
+  <nav>
+    <ul>
+      <li>
+        <div class="tab">
+          <img src="img/arrow-white.png" alt="Return to home page">
+          <a href="">Main page</a>
+        </div>
+      </li>
+      <li>
+        <div class="tab">
+          <img id="restartButton" src="img/replay.png" onclick="clearLocalStorage()" alt="restart game"/>
+          <p>Restart game</p>
+        </div>
+      </li>
+    </ul>
+  </nav>
+
+  <label for="nav-toggle" class="nav-toggle-label">
+    <span> </span>
+  </label>
+</header>
 <div class="phone">
   <div class="header">
     <div class="status-bar">
