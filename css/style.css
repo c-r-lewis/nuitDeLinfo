@@ -32,7 +32,7 @@ nav {
 nav ul {
   list-style: none;
   padding: 0 1em;
-  margin-left: 0.5em;
+  margin: 0 0 0.5em 0.5em;
 }
 
 
@@ -41,8 +41,8 @@ nav a {
   text-decoration: none;
 }
 
-nav a:hover {
-  color: blue;
+nav a:hover .tab{
+  background-color: #A2BAC4;
 }
 
 .nav-toggle:checked ~ nav {
@@ -59,7 +59,10 @@ nav a:hover {
   align-items: center;
   opacity: 0;
   transition: opacity 200ms ease-in-out 250ms;
+  width: calc(100% - 0.5em);
 }
+
+
 
 nav img {
   max-width: 1rem;
