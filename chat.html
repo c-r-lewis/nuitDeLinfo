@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Title</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<nav>
+  <img id="restartButton" src="img/replay.png" onclick="clearLocalStorage()" alt="restart game"/>
+  <h4>Refonte du Site 2023 sur la Sensibilisation aux MST pour la Nuit de l'Info</h4>
+</nav>
+<div class="phone">
+  <div class="header">
+    <div class="status-bar">
+      <span id="time">13:34</span>
+      <div class="camera">
+        <span class="camera-small"></span>
+      </div>
+      <div>
+        <img class="signal-icon" src="img/signal-icon.png" alt="signal icon"/>
+        <img class="battery-icon" src="img/battery-icon.png" alt="battery icon"/>
+      </div>
+    </div>
+    <div class="text">
+      <div class="circle-icon green">J</div>
+      <div>
+        <a href="index.html"><img id="return-arrow" src="img/arrow-icon-black.png" alt="return"/></a>
+        <span class="header-title">Jean</span>
+      </div>
+    </div>
+  </div>
+
+  <div class="body-phone">
+    <div id="previous-messages">
+      <!-- Use javascript to create messages based on choices -->
+    </div>
+    <div id="options">
+      <!-- Use javascript to fill options and change display -->
+    </div>
+    <div class="type-message" onclick="showOptions()">
+      <p>Message</p>
+    </div>
+  </div>
+
+</div>
+<script src="scripts/storyLogic.js"></script>
+<script src="scripts/backGroundElements.js"></script>
+<script src="scripts/controller.js"></script>
+</body>
+</html>

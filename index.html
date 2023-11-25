@@ -1,0 +1,81 @@
+<!doctype html>
+<html class="no-js" lang="">
+
+<head>
+  <meta charset="utf-8">
+  <title>La nuit de l'Info 2022</title>
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+<header>
+  <h4>Refonte du Site 2023 sur la Sensibilisation aux MST pour la Nuit de l'Info</h4>
+  <input type="checkbox" class="nav-toggle" id="nav-toggle"/>
+  <nav>
+    <ul>
+      <li>
+        <div class="tab">
+          <img src="img/arrow-white.png" alt="Return to home page">
+          <a href="">Main page</a>
+        </div>
+      </li>
+      <li>
+        <div class="tab">
+          <img id="restartButton" src="img/replay.png" onclick="clearLocalStorage()" alt="restart game"/>
+          <p>Restart game</p>
+        </div>
+       </li>
+    </ul>
+  </nav>
+
+  <label for="nav-toggle" class="nav-toggle-label">
+    <span> </span>
+  </label>
+</header>
+
+
+<div class="phone">
+    <div class="header">
+      <div class="status-bar">
+        <span id="time">13:34</span>
+        <div class="camera-container">
+          <div class="camera">
+            <div class="camera-small"></div>
+          </div>
+        </div>
+        <div>
+          <img class="signal-icon" src="img/signal-icon.png" alt="signal icon"/>
+          <img class="battery-icon" src="img/battery-icon.png" alt="battery icon"/>
+        </div>
+      </div>
+
+      <div class="text">
+        <div class="circle-icon">A</div>
+        <div class="header-title">Messages</div>
+      </div>
+    </div>
+
+    <a href="chat.html">
+      <div class="message-snippet">
+        <div class="message">
+          <div class="circle-icon green">J</div>
+          <div class="sender">
+            <p class="sender-name">Jean</p>
+            <p id="message-preview"></p>
+          </div>
+        </div>
+        <div class="time">
+          <p id="timestamp">Just now</p>
+        </div>
+
+      </div>
+    </a>
+</div>
+<script src="scripts/storyLogic.js"></script>
+<script src="scripts/backGroundElements.js"></script>
+<script src="scripts/controller.js"></script>
+</body>
+
+</html>
